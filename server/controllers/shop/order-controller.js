@@ -28,8 +28,12 @@ const createOrder = async (req, res) => {
       redirect_urls: {
         // return_url: "http://localhost:5173/shop/paypal-return",
         // cancel_url: "http://localhost:5173/shop/paypal-cancel",
-        return_url: "resonant-tiramisu-c0e0f2.netlify.app/shop/paypal-return",
-        cancel_url: "resonant-tiramisu-c0e0f2.netlify.app/shop/paypal-cancel",
+        // return_url: "resonant-tiramisu-c0e0f2.netlify.app/shop/paypal-return",
+        // cancel_url: "resonant-tiramisu-c0e0f2.netlify.app/shop/paypal-cancel",
+        return_url:
+          "https://resonant-tiramisu-c0e0f2.netlify.app/shop/paypal-return",
+        cancel_url:
+          "https://resonant-tiramisu-c0e0f2.netlify.app/shop/paypal-cancel",
       },
       transactions: [
         {
