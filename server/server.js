@@ -31,7 +31,8 @@ const PORT = process.env.PORT || 5000;
 app.use(
   cors({
     // origin: "http://localhost:5173",
-    origin: "resonant-tiramisu-c0e0f2.netlify.app",
+    // origin: "resonant-tiramisu-c0e0f2.netlify.app",
+    origin: "https://resonant-tiramisu-c0e0f2.netlify.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
@@ -44,7 +45,10 @@ app.use(
   })
 );
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://resonant-tiramisu-c0e0f2.netlify.app"
+  );
   res.header(
     "Access-Control-Allow-Headers",
     "Origin,X-Requested-With,Content-Type,Accept"
